@@ -11,99 +11,64 @@
         margin: 0;
         padding: 0;
       }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
       .container {
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
       }
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-      .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-      }
-      .nav {
-        display: flex;
-      }
-      .nav a {
-        margin-left: 20px;
-        color: #333;
-        text-decoration: none;
-        font-size: 16px;
-      }
-      .nav a:hover {
-        color: #666;
-      }
-      .main {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-      .card {
+      .post {
         background-color: #fff;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
-        width: calc(50% - 10px);
         padding: 20px;
       }
-      .card h2 {
-        font-size: 24px;
+      .post h2 {
+        font-size: 28px;
         margin-top: 0;
         margin-bottom: 10px;
       }
-      .card p {
-        font-size: 14px;
+      .post p {
+        font-size: 16px;
         line-height: 1.5;
         margin-bottom: 10px;
       }
-      .card .location {
+      .post .author {
         font-size: 14px;
         color: #999;
-        margin-bottom: 10px;
       }
-      .card .salary {
+      .post .date {
         font-size: 14px;
         color: #999;
-        margin-bottom: 10px;
-      }
-      .card .tags {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-      }
-      .card .tags a {
-        margin-right: 10px;
-        margin-bottom: 10px;
-        color: #333;
-        text-decoration: none;
-        font-size: 12px;
-        border: 1px solid #333;
-        padding: 3px 5px;
-        border-radius: 5px;
-      }
-      .card .tags a:hover {
-        background-color: #333;
-        color: #fff;
+        margin-left: 10px;
       }
     </style>
   </head>
   <body>
+    <header>
+      <div class="container">
+        <h1>로고 또는 사이트 이름</h1>
+      </div>
+    </header>
     <div class="container">
-      <div class="header">
-        <div class="logo">로고 또는 사이트 이름</div>
-        <div class="nav">
-          <a href="#">Home</a>
-          <a href="#">Jobs</a>
-          <a href="#">Companies</a>
+      <div class="post">
+        <h2>글 제목</h2>
+        <p>글 내용</p>
+        <div class="author">
+          글쓴이 <span class="date">2023-04-26</span>
         </div>
       </div>
-      <div class="main">
-        <div class="card">
-          <h2>제목</h2>
-          <p>설명</p>
-          <div class="location">지역
+      <div class="post">
+        <h2>글 제목</h2>
+        <p>글 내용</p>
+        <div class="author">
+          글쓴이 <span class="date">2023-04-25</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
