@@ -80,6 +80,19 @@ h2 {
   max-width: 600px;
 }
 
+.hero-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0,0,0.3);
+  overflow: hidden;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.hero-card img {
+  max-width: 100%;
+}
+
 .button {
   background-color: #00bcd4;
   color: #fff;
