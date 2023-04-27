@@ -41,7 +41,7 @@ header p {
 nav {
   background-color: #ecf0f1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
 }
 
