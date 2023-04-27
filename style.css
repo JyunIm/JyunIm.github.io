@@ -59,6 +59,21 @@ h2 {
   margin-bottom: 20px;
 }
 
+.hero-section {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    
+.hero-section img {
+  margin-right: 50px;
+}
+
+.hero-section h2 {
+  margin: 0;
+}
+
 .hero-section p {
   font-size: 20px;
   margin-bottom: 30px;
@@ -88,7 +103,7 @@ h2 {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
-  max-width: 600px;
+  max-width: 610px;
 }
 
 .project-section h3 {
