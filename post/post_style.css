@@ -160,7 +160,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.project-info mark {
+.project-info p:mark {
   background-color: #FFD400;
 }
 
