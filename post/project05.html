@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>JIHYUN</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="post_style.css">
 </head>
 <body>
   <header>
@@ -40,25 +40,25 @@
     <section class="project-section">
       <h3>INTRO</h3>
       <div class="project-info">
-        <h4>&#10112 DATA</h4>
+        <h4>1. DATA</h4>
         <p>
           &#128161 <b>데이터</b><br>
           &#8226 Kaggle에 존재하는 Olist Marketing Funnel 데이터와 Brazilian E-commerce(olist)
           Public 데이터를 사용했습니다.<br>
           <div style="padding-left: 10px;">
             <p>
-              &#176 Olist Marketing Funnel Data <a href="https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist">Link</a>
+              &#176 Olist Marketing Funnel Data <a href="https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist">Link</a><br>
               &#176 Brazilian E-commerce(olist) Public Data <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">Link</a>
             </p>
           </div>
           <img src="" alt="데이터 구조">
-        </p>
+        </p><br>
         <p>
           &#128161 <b>데이터 설명</b><br>
           &#8226 Olist Marketing Funnel Data
           <div style="padding-left: 10px;">
            <p>
-              &#176 olist_marketing_qualified_leads_dataset : 마케팅 채널 데이터
+              &#176 olist_marketing_qualified_leads_dataset : 마케팅 채널 데이터<br>
               &#176 olist_closed_deals_dataset : 판매자의 플랫폼 결제(입점) 데이터
            </p>
           </div>
@@ -66,7 +66,7 @@
           &#8226 Brazilian E-commerce(olist) Public Data
           <div style="padding-left: 10px;">
             <p class="in">
-              &#176 olist_sellers_dataset : 플랫폼 내 판매자 데이터
+              &#176 olist_sellers_dataset : 플랫폼 내 판매자 데이터<br>
               &#176 olist_order_items_dataset : 상품 주문 데이터
             </p>
           </div>
@@ -81,69 +81,79 @@
         </p><br><br>
       </div>
 
-      <h4>&#10113 문제정의</h4>
-      <p>
-        &#128161 <b>문제 상황</b><br>
-      </p>
-      <img src="" alt="월별 유입">
-      <p>
-        - 월별 유입데이터를 확인해보면 2018년 1월에 비해 2018년 5월에 유입이 증가한 것을 확인할 수 있습니다.<br>
-        - <b>2018년도의 날짜와 유입의 상관계수를 살펴보면 0.15로 유입이 증가</b>하고 있지만, 증가의 정도가 약한 것을 알 수 있습니다.
-      </p><br>
-      <img src="" alt="월별 전환율">
-      <p>
-        - 2018년 2월부터 전환율이 감소하고 있으며, 5월에 급격한 전환율의 감소가 확인됩니다.
-      </p><br>
-      <img src="" alt="월별 마케팅 예산">
-      <p>
-        - 이전 월 매출을 기준으로 매출의 약 10%를 마케팅 예산으로 책정할 때, 월별 마케팅 예산은 위 그래프와 같습니다.
-      </p><br>
-      <p>
-        &#128161 <b>문제 정의</b><br>
-        - 마케팅 예산이 한정되어 있는데, 유입이 조금씩 증가하면서 전환율이 감소하면 <mark><b>고객 획득 비용(CAC)이 증가</b></mark>하게 됩니다.<br>
-        - 고객 획득 비용(CAC)이 증가하면 장기적으로 기업의 수익이 감소하기 때문에 각 마케팅 채널에서 사용되는 불필요한 비용을 줄여야 합니다.
-      </p><br><br>
+      <div class="project-info">
+        <h4>2. 문제정의</h4>
+        <p>
+          &#128161 <b>문제 상황</b><br>
+        </p>
+        <img src="" alt="월별 유입">
+        <p>
+          &#8226 월별 유입데이터를 확인해보면 2018년 1월에 비해 2018년 5월에 유입이 증가한 것을 확인할 수 있습니다.<br>
+          &#8226 <b>2018년도의 날짜와 유입의 상관계수를 살펴보면 0.15로 유입이 증가</b>하고 있지만, 증가의 정도가 약한 것을 알 수 있습니다.
+        </p><br>
+        <img src="" alt="월별 전환율">
+        <p>
+          &#8226 2018년 2월부터 전환율이 감소하고 있으며, 5월에 급격한 전환율의 감소가 확인됩니다.
+        </p><br>
+        <img src="" alt="월별 마케팅 예산">
+        <p>
+          &#8226 이전 월 매출을 기준으로 매출의 약 10%를 마케팅 예산으로 책정할 때, 월별 마케팅 예산은 위 그래프와 같습니다.
+        </p><br>
+        <p>
+          &#128161 <b>문제 정의</b><br>
+          &#8226 마케팅 예산이 한정되어 있는데, 유입이 조금씩 증가하면서 전환율이 감소하면 <mark><b>고객 획득 비용(CAC)이 증가</b></mark>하게 됩니다.<br>
+          &#8226 고객 획득 비용(CAC)이 증가하면 장기적으로 기업의 수익이 감소하기 때문에 각 마케팅 채널에서 사용되는 불필요한 비용을 줄여야 합니다.
+        </p><br><br>
+      </div>
 
-      <h4>&#10114 프로젝트 목표</h4>
-      <p>
-        &#128161 <b>프로젝트 목표</b><br>
-        - <mark><b>고객 획득 비용(CAC)을 낮추기 위해</b></mark> 마케팅 채널별 고객 획득 비용(CAC)과 고객 생애 가치(CLV)를 비교하여 
-        <mark><b>각 마케팅 채널의 예산을 산전</b></mark>합니다.
-      </p><br>
-      <p>
-        &#128161 <b>프로젝트 기대 효과</b><br>
-        - 고객 획득 비용(CAC)과 고객 생애 가치(CLV)에 대한 분석을 통해 기업은 다음과 같은 기대효과를 얻을 수 있습니다.
-      </p><br>
-      <p class="in">
-        1. 기업은 <mark><b>불필요한 마케팅 비용을 줄이고 효율적인 마케팅</b></mark>을 위한 전략을 수립할 수 있습니다.
-      </p>
-      <p class="in">
-        2. 기업은 고객 생애 가치(CLV)가 높은 고객군을 발굴하여 혜택을 제공함으로써 <mark><b>고객 유지율을 높일 수 있습니다.</b></mark>
-      </p><br><br>
+      <div class="project-info">
+        <h4>3. 프로젝트 목표</h4>
+        <p>
+          &#128161 <b>프로젝트 목표</b><br>
+          &#8226 <mark><b>고객 획득 비용(CAC)을 낮추기 위해</b></mark> 마케팅 채널별 고객 획득 비용(CAC)과 고객 생애 가치(CLV)를 비교하여 
+          <mark><b>각 마케팅 채널의 예산을 산전</b></mark>합니다.
+        </p><br>
+        <p>
+          &#128161 <b>프로젝트 기대 효과</b><br>
+          &#8226 고객 획득 비용(CAC)과 고객 생애 가치(CLV)에 대한 분석을 통해 기업은 다음과 같은 기대효과를 얻을 수 있습니다.
+        </p>
+        <div style="padding-left: 10px;">
+          <p>
+            1. 기업은 <mark><b>불필요한 마케팅 비용을 줄이고 효율적인 마케팅</b></mark>을 위한 전략을 수립할 수 있습니다.<br>
+            2. 기업은 고객 생애 가치(CLV)가 높은 고객군을 발굴하여 혜택을 제공함으로써 <mark><b>고객 유지율을 높일 수 있습니다.</b></mark>
+          </p>
+          <br><br>
+        </div>
+      </div>
 
-      <h4>&#10115 가설</h4>
-      <p>
-        - 마케팅 채널의 유입이 많고, 전환율이 높을수록 고객 생애 가치(CLV)가 높을 것입니다.
-      </p>
-      <p class="in">
-        >> 마케팅 채널에 따라 유입되는 고객의 특성이 다르기 때문에 해당 마케팅 채널을 이용한 고객 생애 가치(CLV)도 다를 것이라 예상됩니다.
-      </p>
-      <p>
-        - 유입과 전환율이 낮은 마케팅 채널에 많은 마케팅 예산을 산정했을 때, 고객 생애 가치(CLV)보다 고객 획득 비용(CAC)이 높을 것이라 예상됩니다.
-      </p><br><br>
+      <div class="project-info">
+        <h4>4. 가설</h4>
+        <p>
+          &#8226 마케팅 채널의 유입이 많고, 전환율이 높을수록 고객 생애 가치(CLV)가 높을 것입니다.
+          <div style="padding-left: 10px;">
+            <p>
+              &#176 마케팅 채널에 따라 유입되는 고객의 특성이 다르기 때문에 해당 마케팅 채널을 이용한 고객 생애 가치(CLV)도 다를 것이라 예상됩니다.
+            </p>
+          </div>
+        </p>
+        <p>
+          &#8226 유입과 전환율이 낮은 마케팅 채널에 많은 마케팅 예산을 산정했을 때, 고객 생애 가치(CLV)보다 고객 획득 비용(CAC)이 높을 것이라 예상됩니다.
+        </p><br><br>
+      </div>
 
-      <h4>&#10116 개념정리</h4>
-      <p>
-        &#128161 <b>고객 생애 가치(Customer Lifetime Value, CLV)</b><br>
-        - 단일 고객 계정에서 기대할 수 있는 총 수익을 나타내는 지표<br>
-        - 고객의 수익가치를 고려하여 예상되는 고객 수명과 비교<br>
-        - 기업은 고객 생애 가치 지표를 사용하여 가장 중요한 고객 세그먼트 확인 가능
-      </p>
-      <p>
-        &#128161 <b>고객 획득 비용(Cost of Customer Acquisition, CAC)</b><br>
-        - 잠재 고객이 자사의 제품 또는 서비스를 구매하도록 유도하는데 들어가는 비용
-      </p><br>
-
+      <div class="project-info">
+        <h4>&#10116 개념정리</h4>
+        <p>
+          &#128161 <b>고객 생애 가치(Customer Lifetime Value, CLV)</b><br>
+          &#8226 단일 고객 계정에서 기대할 수 있는 총 수익을 나타내는 지표<br>
+          &#8226 고객의 수익가치를 고려하여 예상되는 고객 수명과 비교<br>
+          &#8226 기업은 고객 생애 가치 지표를 사용하여 가장 중요한 고객 세그먼트 확인 가능
+        </p><br>
+        <p>
+          &#128161 <b>고객 획득 비용(Cost of Customer Acquisition, CAC)</b><br>
+          &#8226 잠재 고객이 자사의 제품 또는 서비스를 구매하도록 유도하는데 들어가는 비용
+        </p><br>
+      </div>
       <br><br><br>
     </section>
     
