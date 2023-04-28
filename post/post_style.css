@@ -49,11 +49,12 @@ nav a:hover {
 }
 
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
-  justify-content: center;
+  margin: 0 auto; /* 가운데 정렬 */
+  max-width: 800px; /* 최대 너비 설정 */
+  padding: 0 20px; /* 좌우 공백 설정 */
+  box-sizing: border-box; /* 패딩과 너비를 함께 계산하도록 설정 */
 }
+
 
 h2 {
   font-size: 48px;
