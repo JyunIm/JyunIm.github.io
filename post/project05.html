@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JIHYUN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>Project</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="데이터_분석가_임지현_이력서_.pdf">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero-section">
+      <h2>효율적인 마케팅을 위한 마케팅 채널별 고객 생애 가치 분석</h2>
+      <p id="contents">
+        INTRO <br>
+        DATA / 문제정의 / 프로젝트 목표 / 가설 / 개념정리 <br>
+        <br>
+        데이터 분석 <br>
+        EDA / 데이터 분석 / 데이터 분석 결과 <br>
+        <br>
+        결론 <br>
+        결론 / 프로젝트 회고 / 참고 자료
+      </p>
+    </section>
+    
+    <section class="about-section">
+      <h3>INTRO</h3>
+      <h4>&#10112 DATA</h4>
+      <p>
+        &#128161 <b>데이터</b><br>
+        - Kaggle에 존재하는 Olist Marketing Funnel 데이터와 Brazilian E-commerce(olist)
+        Public 데이터를 사용했습니다.
+      </p>
+      <p class="in">
+        >> Olist Marketing Funnel Data <a href="https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist">Link</a>
+      </p>
+      <p class="in">
+        >> Brazilian E-commerce(olist) Public Data <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">Link</a>
+      </p>
+      <img src="" alt="데이터 구조">
+      <br>
+
+      <p>
+        &#128161 <b>데이터 설명</b><br>
+        - Olist Marketing Funnel Data.
+      </p>
+      <p class="in">
+        >> olist_marketing_qualified_leads_dataset : 마케팅 채널 데이터
+      </p>
+      <p class="in">
+        >> olist_closed_deals_dataset : 판매자의 플랫폼 결제(입점) 데이터
+      </p>
+      <p>
+        - Brazilian E-commerce(olist) Public Data
+      </p>
+      <p class="in">
+        >> olist_sellers_dataset : 플랫폼 내 판매자 데이터
+      </p>
+      <p class="in">
+        >> olist_order_items_dataset : 상품 주문 데이터
+      </p><br>
+
+      <p>
+        &#128161 <b>데이터 선정 이유</b><br>
+        - 팀 프로젝트로 '이커머스 매출 증대를 위한 데이터 분석' 프로젝트를 진행했습니다. 해당 프로젝트에서
+        플랫폼의 마케팅 채널에 대한 분석을 하였고, 마케팅 채널에 대한 추가적인 분석을 하기 위한 팀 프로젝트에서 
+        사용했던 데이터를 이용했습니다.<br>
+        - 마케팅 채널에 대한 데이터와 고객 구매 데이터가 존재하여 고객 생애 가치(CLV)를 분석하기에 용이할 것으로 판단했습니다.
+      </p><br><br>
+
+      <h4>&#10113 문제정의</h4>
+      <p>
+        &#128161 <b>문제 상황</b><br>
+      </p>
+      <img src="" alt="월별 유입">
+      <p>
+        - 월별 유입데이터를 확인해보면 2018년 1월에 비해 2018년 5월에 유입이 증가한 것을 확인할 수 있습니다.<br>
+        - <b>2018년도의 날짜와 유입의 상관계수를 살펴보면 0.15로 유입이 증가</b>하고 있지만, 증가의 정도가 약한 것을 알 수 있습니다.
+      </p><br>
+      <img src="" alt="월별 전환율">
+      <p>
+        - 2018년 2월부터 전환율이 감소하고 있으며, 5월에 급격한 전환율의 감소가 확인됩니다.
+      </p><br>
+      <img src="" alt="월별 마케팅 예산">
+      <p>
+        - 이전 월 매출을 기준으로 매출의 약 10%를 마케팅 예산으로 책정할 때, 월별 마케팅 예산은 위 그래프와 같습니다.
+      </p><br>
+      <p>
+        &#128161 <b>문제 정의</b><br>
+        - 마케팅 예산이 한정되어 있는데, 유입이 조금씩 증가하면서 전환율이 감소하면 <mark><b>고객 획득 비용(CAC)이 증가</b></mark>하게 됩니다.<br>
+        - 고객 획득 비용(CAC)이 증가하면 장기적으로 기업의 수익이 감소하기 때문에 각 마케팅 채널에서 사용되는 불필요한 비용을 줄여야 합니다.
+      </p><br><br>
+
+      <h4>&#10114 프로젝트 목표</h4>
+      <p>
+        &#128161 <b>프로젝트 목표</b><br>
+        - <mark><b>고객 획득 비용(CAC)을 낮추기 위해</b></mark> 마케팅 채널별 고객 획득 비용(CAC)과 고객 생애 가치(CLV)를 비교하여 
+        <mark><b>각 마케팅 채널의 예산을 산전</b></mark>합니다.
+      </p><br>
+      <p>
+        &#128161 <b>프로젝트 기대 효과</b><br>
+        - 고객 획득 비용(CAC)과 고객 생애 가치(CLV)에 대한 분석을 통해 기업은 다음과 같은 기대효과를 얻을 수 있습니다.
+      </p><br>
+      <p class="in">
+        1. 기업은 <mark><b>불필요한 마케팅 비용을 줄이고 효율적인 마케팅</b></mark>을 위한 전략을 수립할 수 있습니다.
+      </p>
+      <p class="in">
+        2. 기업은 고객 생애 가치(CLV)가 높은 고객군을 발굴하여 혜택을 제공함으로써 <mark><b>고객 유지율을 높일 수 있습니다.</b></mark>
+      </p><br><br>
+
+      <h4>&#10115 가설</h4>
+      <p>
+        - 마케팅 채널의 유입이 많고, 전환율이 높을수록 고객 생애 가치(CLV)가 높을 것입니다.
+      </p>
+      <p class="in">
+        >> 마케팅 채널에 따라 유입되는 고객의 특성이 다르기 때문에 해당 마케팅 채널을 이용한 고객 생애 가치(CLV)도 다를 것이라 예상됩니다.
+      </p>
+      <p>
+        - 유입과 전환율이 낮은 마케팅 채널에 많은 마케팅 예산을 산정했을 때, 고객 생애 가치(CLV)보다 고객 획득 비용(CAC)이 높을 것이라 예상됩니다.
+      </p><br><br>
+
+      <h4>&#10116 개념정리</h4>
+      <p>
+        &#128161 <b>고객 생애 가치(Customer Lifetime Value, CLV)</b><br>
+        - 단일 고객 계정에서 기대할 수 있는 총 수익을 나타내는 지표<br>
+        - 고객의 수익가치를 고려하여 예상되는 고객 수명과 비교<br>
+        - 기업은 고객 생애 가치 지표를 사용하여 가장 중요한 고객 세그먼트 확인 가능
+      </p>
+      <p>
+        &#128161 <b>고객 획득 비용(Cost of Customer Acquisition, CAC)</b><br>
+        - 잠재 고객이 자사의 제품 또는 서비스를 구매하도록 유도하는데 들어가는 비용
+      </p><br>
+      <a href="contents">맨위로</a>
+
+      <br><br><br>
+    </section>
+    
+    <section class="about-section">
+        <h3>데이터 분석</h3>
+        <h4>&#10112 EDA</h4>
+        <p>
+          &#128161 <b>데이터 전처리</b><br>
+          - 마케팅 채널의 결측치는 채널을 알 수 없기 때문에 'unknown'으로 대체합니다.<br>
+          - 주문 건수와 주문 건당 매출을 판매자ID, 배송 기한 기준으로 묶어서 판매자의 월 매출로 계산합니다.<br>
+          - 판매자의 월 매출에 입점 수수료(8%)를 곱하여 플랫폼 수익을 나타내는 컬럼을 생성하고 월 매출 데이터가 없어 수익을 나타낼 수 없다면 '0'으로 표시합니다.<br>
+          - 거래가 없어 배송기한이 없는 경우, 빈 데이터를 2022년 12월 31일로 대체합니다.<br>
+          - 배송 기한을 연도와 월만 표시하는 컬럼을 생성합니다.
+        </p><br>
+        <p>
+            &#128161 <b>고객 생애 가치(CLV) 및 고객 획득 비용(CAC) 계산</b><br>
+            - 고객 생애 가치(CLV) 계산
+        </p>
+        <p class="in">
+            >> 평균 구매 가치 = 전체 기간의 수익 평균<br>
+            >> 평균 구매 빈도율 = 총 주문 건수 / 중복이 없는 판매자 수<br>
+            >> 고객 가치 = 평균 구매 가치 * 평균 구매 빈도율<br>
+            >> 평균 구매 수명 = (판매자별 첫 판매일 - 판매자별 마지막 판매일)의 평균<br>
+            >> 고객 생애 가치(CLV) = 고객 가치 * 평균 고객 수명
+        </p>
+        <p>
+            &#128161 <b>고객 획득 비용(CAC) 계산</b><br>
+            - 고객 획득 비용(CAC) 계산
+        </p>
+        <p class="in">
+            >> 고객 획득 비용(CAC) = 마케팅 비용 / 등록한 판매자 수
+        </p>
+        <br><br>
+
+        <h4>&#10113 데이터 분석</h4>
+        <p>
+          &#128161 <b>마케팅 채널별 고객 생애 가치(CLV)</b>
+        </p>
+        <img src="" alt="채널별 고객 생애 가치">
+        <p>
+          - <b>전체 고객 생애 가치(CLV) 1281.70 브라질 달러이고, 전체 고객 생애 가치(CLV)보다 
+          고객 생애 가치(CLV)가 높은 채널은 organic_search, other, unknown</b>입니다.
+          - 마케팅 채널별로 고객 생애 가치(CLV), 유입, 전환율을 확인해보면 다음 표와 같습니다. 
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>마케팅 채널</th>
+              <th>고객 생애 가치</th>
+              <th>유입</th>
+              <th>전환율</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>unknown</td>
+              <td>1850</td>
+              <td>1159</td>
+              <td>16.65%</td>
+            </tr>
+            <tr>
+              <td>other</td>
+              <td>1791</td>
+              <td>150</td>
+              <td>2.67%</td>
+            </tr>
+            <tr>
+              <td>organic_search</td>
+              <td>1289</td>
+              <td>2296</td>
+              <td>11.80%</td>
+            </tr>
+            <tr>
+              <td>referral</td>
+              <td>1272</td>
+              <td>284</td>
+              <td>8.45%</td>
+            </tr>
+            <tr>
+              <td>social</td>
+              <td>1187</td>
+              <td>1350</td>
+              <td>5.56%</td>
+            </tr>
+            <tr>
+              <td>paid_search</td>
+              <td>1132</td>
+              <td>1586</td>
+              <td>12.30%</td>
+            </tr>
+            <tr>
+              <td>email</td>
+              <td>942</td>
+              <td>493</td>
+              <td>3.04%</td>
+            </tr>
+            <tr>
+              <td>direct_traffic</td>
+              <td>512</td>
+              <td>499</td>
+              <td>11.22%</td>
+            </tr>
+            <tr>
+              <td>display</td>
+              <td>92</td>
+              <td>118</td>
+              <td>5.08%</td>
+            </tr>
+            <tr>
+              <td>other_publicities</td>
+              <td>0</td>
+              <td>65</td>
+              <td>4.62%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          - 고객 생애 가치, 유입, 전환율이 모두 상위 3개 안에 있는 마케팅 채널은 unknown, organic_search입니다.
+        </p>
+        <br>
+        <img src="" alt="상관계수">
+        <p>
+          - 마케팅 채널별 유입, 전환율과 고객 생애 가치(CLV) 사이에 약한 양의 상관관계가 있다고 볼 수 있습니다. 즉, 
+          <b>마케팅 채널별 유입이 많고, 전환율이 높을수록 고객 생애 가치(CLV)가 높을 것</b>으로 추측할 수 있습니다.
+        </p><br>
+        <p>
+          &#128161 <b>마케팅 채널별 신규 고객 획득 비용(CAC)</b>
+          - <p class="in">불필요한 마케팅 비용을 줄이기 위해서는 고객 획득 비용(CAC)이 고객 생애 가치(CLV)보다 낮아야 합니다. 
+            그래서 AB 테스트를 통해 고객 획득 비용(CAC)를 줄일 수 있는 방법을 찾고자 합니다.</p>
+          - <p class="in">2018년 6월의 마케팅 채널별 예산을 산정하기 위해 2018년 5월 마케팅 예산, 유입 데이터를 사용하여 아래의 AB 테스트를 진행했습니다.<br>
+          a. <b>모든 마케팅 채널의 예산이 동일한 경우</b><br> 
+          b. <b>지난달 마케팅 채널별 유입에 따라 마케팅 예산에 차이를 둔 경우</b><br>
+          마케팅 채널별 유입이 전환율보다 고객 생애 가치와 높은 상관성을 지니고 있기 때문에 마케팅 예산을 산정할 때, 지난달의 마케팅 채널별 유입을 b안으로 설정하였습니다.</p>
+        </p><br>
+        <p>
+          <b>A. 모든 마케팅 채널의 예산이 동일한 경우</b>
+        </p>
+        <img src="" alt="마케팅 채널별 예산이 동일">
+        <p>
+          - <p class="in">
+            <mark><b>고객 획득 비용(CAC)의 합계는 1,495.9로 평균 고객 생애 가치(CLV)인 999.3보다 높은 것을 확인</b></mark>할 수 있습니다.
+          </p>
+          - <p class="in">
+            Display 채널은 고객 획득 비용(CAC)이 고객 생애 가치(CLV)보다 약 8배 많으며, email과 direct_traffic 채널의 고객 획득 비용(CAC)는 
+            고객 생애 가치(CLV)의 약 41%, 21%를 차지하고 있습니다.
+          </p>
+          - <p class="in">
+            Other, other_publicities 채널의 경우, 결제를 진행한 고객이 없기 때문에 고객 획득 비용(CAC)이 존재하지 않습니다.
+          </p>
+        </p><br>
+        <p>
+          <b>B. 지난달 마케팅 채널별 유입에 따라 마케팅 예산을 배분한 경우</b>
+        </p>
+        <img src="" alt="마케팅 채널별 예산이 차등">
+        <p>
+          - <p class="in">
+            <mark><b>고객 획득 비용(CAC)의 합계는 643.9로 평균 고객 생애 가치(CLV)인 999.3보다 낮은 것을 확인</b></mark>할 수 있습니다.
+          </p>
+          - <p class="in">
+            지난달의 채널별 유입에 따라 마케팅 예산을 결정할 경우, 모든 마케팅 채널의 예산이 동일할 때보다 direct_traffic, display, email, referral 채널에서
+            고객 획득 비용(CAC)이 45%, 86%, 60%, 67% 정도 감소했습니다.
+          </p>
+        </p>
+        <br><br>
+
+        <h4>&#10114 데이터 분석 결과</h4>
+        
+
+        <br><br><br>
+      </section>
+
+      <section class="about-section">
+        <h3>결론</h3>
+        <h4>&#10112 결론</h4>
+        <p>
+          
+        </p>
+        <br><br>
+
+        <h4>&#10113 프로젝트 회고</h4>
+        <p>
+          
+        </p>
+        <br><br>
+
+        <h4>&#10114 참고자료</h4>
+        <p>
+          
+        </p>
+        <br><br>
+      </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
