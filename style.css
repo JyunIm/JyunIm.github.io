@@ -50,6 +50,7 @@ nav a:hover {
 
 main {
   margin: 0 auto; /* 가운데 정렬 */
+  padding: 100px 20px;
   max-width: 1000px; /* 최대 너비 설정 */
   box-sizing: border-box; /* 패딩과 너비를 함께 계산하도록 설정 */
 }
