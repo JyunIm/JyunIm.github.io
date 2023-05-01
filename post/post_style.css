@@ -180,11 +180,6 @@ img {
   color: #808080;
 }
 
-.project-info ul {
-  display: flex;
-  list-style: none;
-}
-
 .project-info li {
   font-size: 18px;
   line-height: 135%;
