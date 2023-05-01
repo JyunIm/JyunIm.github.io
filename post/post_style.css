@@ -206,6 +206,10 @@ textarea {
   margin-bottom: 20px;
 }
 
+.hidden-content {
+  display: none;
+}
+
 button[type="submit"] {
   background-color: #00bcd4;
   color: #fff;
