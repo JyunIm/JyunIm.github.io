@@ -187,6 +187,10 @@ img {
   margin-left: 20px;
 }
 
+.Toggle {
+  font-size: 18px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -204,10 +208,6 @@ textarea {
   border: none;
   padding: 10px;
   margin-bottom: 20px;
-}
-
-.hidden-content {
-  display: none;
 }
 
 button[type="submit"] {
