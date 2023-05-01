@@ -276,6 +276,21 @@
           </div><br><br>
         </div>
 
+        <script>
+          const toggleButton = document.querySelector('#toggle-btn');
+          const targetDiv = document.querySelector('#Toggle');
+
+          toggleButton.addEventListener('click', () => {
+            targetDiv.classList.toggle('hidden');
+          });
+        </script>
+
+        <style>
+          .hidden {
+            display: none;
+          }
+        </style>
+      
         <div class="project-info">
           <h4>3. 데이터 분석 결과</h4>
           <ul>
@@ -386,6 +401,22 @@
               </div>
             </ul>
           </div>
+
+          <script>
+            const toggleButton = document.querySelector('#toggle-btn');
+            const targetDiv = document.querySelector('#Toggle');
+
+            toggleButton.addEventListener('click', () => {
+              targetDiv.classList.toggle('hidden');
+            });
+          </script>
+
+          <style>
+            .hidden {
+              display: none;
+            }
+          </style>
+
           <br><br>
         </div>
 
