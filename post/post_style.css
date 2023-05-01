@@ -187,10 +187,6 @@ img {
   margin-left: 20px;
 }
 
-.Toggle {
-  font-size: 18px;
-}
-
 form {
   display: flex;
   flex-direction: column;
