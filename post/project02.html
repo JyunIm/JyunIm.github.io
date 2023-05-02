@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JIHYUN</title>
+  <link rel="stylesheet" href="post_style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>Project</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="데이터_분석가_임지현_이력서_.pdf">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero-section">
+      <h2>플레이리스트 속 태그를 이용한 음악 추천 프로젝트</h2>
+    </section>
+   
+    <section class="about-section">
+      <p><br>
+        <b>INTRO</b> <br>
+        기획배경 / 프로젝트 목표 / DATA / 가설 / 개념정리 <br>
+        <br>
+        <b>Deep Learning Model</b> <br>
+        EDA / Model <br>
+        <br>
+        <b>결론</b> <br>
+        결론 / 프로젝트 회고 / 참고 자료
+      </p><br>
+      <a href="https://github.com/JyunIm/portfolio/blob/main/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%A9%E1%86%A8%20%E1%84%90%E1%85%A2%E1%84%80%E1%85%B3%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%8B%E1%85%A1%E1%86%A8%20%E1%84%8E%E1%85%AE%E1%84%8E%E1%85%A5%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3/recommendation_system.ipynb">프로젝트 분석 코드</a><br>
+      <br>
+    </section>
+    <br>
+    <section class="project-section">
+      <h3><span style="background-color: #FAFAB4;">&nbsp;&nbsp;INTRO&nbsp;&nbsp;</span></h3>
+      <div class="project-info">
+        <h4>1. 기획배경</h4>
+        <img scr="../image/project0201.png" alt="출처 이미지">
+        <ul>
+          <li>사람들의 취향이 다양해지면서 기업들은 <b><mark>개인화된 소비자들의 욕구를 
+            충족시키기 위해 추천시스템을 사용</mark></b>하고 있습니다.</li>
+          <li>추천 시스템은 사람들이 좋아하는 상품을 기반으로 유사한 특징을 가진 상품을 추천하거나 
+            비슷한 취향을 가진 소비자들이 좋아한 상품을 제안해줍니다.</li>
+          <li>개인화된 추천 시스템은 Netfilx, TVING, YouTube, Spotify, Melon, VIBE, Musinsa, ZigZag 등의 
+            다양한 회사에서 이용하고 있습니다.</li>
+        </ul><br><br>
+      </div>
+
+      <div class="project-info">
+        <h4>2. 프로젝트 목표</h4>
+        <p>
+          &#128161; <b>프로젝트 목표</b><br>
+        </p>
+        <ul>
+          <li>소비자들의 선호도를 기반으로 <b><mark>소비자들이 키워드를 입력했을 때, 
+            듣고 싶을 것이라 예상되는 음악을 추천</mark></b>해줍니다.</li>
+        </ul><br><br>
+        <p>
+          &#128161; <b>프로젝트 기대 효과</b>
+        </p>
+        <ul>
+          <li>기업은 추천시스템을 통해 다음과 같은 기대효과를 얻을 수 있습니다.</li>
+          <div style="padding-left: 20px;">
+            <ol>
+              <li>기업은 고객에게 맞춤 서비스를 제공하여 <mark><b>의사결정에 들어가는 시간과 노력을 
+                감소시켜서 긍정적인 구매 경험</b></mark>을 전달할 수 있습니다.</li>
+              <li>기업은 추천시스템을 통해 개인에게 <mark><b>맞춤형 마케팅을 제공</b></mark>하여 
+              마케팅에 들어가는 비용을 줄일 수 있습니다.</li>
+            </ol>
+          </div>
+        </ul><br><br>
+      </div>
+
+      <div class="project-info">
+        <h4>3. 데이터</h4>
+        <p>
+          &#128161; <b>멜론 플레이리스트 데이터(</b><a href="https://arena.kakao.com/c/7/data">Link</a>)
+        <p/>
+        <ul>
+          <li>사용자들이 만든 플레이리스트와 플레이리스트에 속해있는 음악 및 키워드, 플레이리스트에 대한 소비자들의 선호도를 포함한 데이터.</li>
+        </ul><br><br>
+        <p>
+          &#128161; <b>데이터 선정 이유</b>
+        </p>
+        <ul>
+          <li>음악 분야의 경우, 영상 및 OTT 분야와 마찬가지로 추천시스템을 활발하게 사용합니다.</li>
+          <li>음악을 통한 추천 시스템을 구축한다면 이후 다양한 분야에서도 추천 시스템을 적용할 수 있을 것이라 예상됩니다.</li>
+        </ul>
+        <br><br>
+      </div>
+
+      <div class="project-info">
+        <h4>4. 가설</h4>
+        <ul>
+          <li>키워드(태그, 플레이리스트 제목)와 음악 간의 상관관계가 높으면 사람들의 선호도가 높을 것입니다. </li>
+          <div style="padding-left: 20px;">
+            <ul>
+              <li>키워드(음악)을 통해 유사도가 높은 음악(키워드)를 사용자에게 추천해줄 수 있을 것입니다. </li>
+            </ul>
+          </div>
+          <li>키워드를 조합하면 사람들이 좋아하는 음악들을 모아서 플레이리스트를 만들 수 있을 것입니다. </li>
+        </ul><br><br>
+      </div>
+
+      <div class="project-info">
+        <h4>5. 개념정리</h4>
+        <p>
+          &#128161; <b>추천 시스템</b><br>
+        </p>
+        <ul>
+          <li>사용자가 관심을 가질만한 콘텐츠(상품, 영화, 이미지, 뉴스 등)를 추천하는 것으로 
+          사용자의 선호도 및 과거 행동을 토대로 사용자에 적합한 콘텐츠를 제공하는 것</li>
+          <li>콘텐츠 기반 추천 시스템, 협업 필터링, 딥러닝 기반 추천 시스템 등이 존재</li>
+        </ul><br><br>
+        <p>
+          &#128161; <b>AutoEncoder</b><br>
+        </p>
+        <ul>
+          <li>입력 데이터를 저차원의 벡터로 압축한 뒤 원래 크기의 데이터로 복원하는 신경망(Encoder-Decoder)</li>
+          <li>Denoising AutoEncoder의 경우, 일부 데이터에 noise를 추가하기 때문에 기본 AutoEncoder모델보다 성능이 우수함</li>
+          <li>Denoising AutoEncoder를 통해 복원된 데이터를 사용하면 소비자가 키워드를 입력했을 때, 좋아할만한 음악을 추천하는 것이 가능</li>
+        </ul>
+        <br><br><br>
+      </div>
+    </section>
+    
+    <section class="project-section">
+        <h3><span style="background-color: #FAFAB4;">&nbsp;&nbsp;Deep Learning Model&nbsp;&nbsp;</span></h3>
+        <div class="project-info">
+          <h4>1. EDA</h4>
+          <ul>
+            <li>플레이리스트에 있는 tags를 개별 tag로 나누어 저장합니다.</li>
+            <li>플레이리스트에 있는 songs를 개별 song으로 나누어 저장합니다.</li>
+            <li>song, key_word, like_cnt column을 사용하여 학습에 필요한 피벗테이블을 생성합니다.</li>
+            <li>피벗테이블 값에 대해 최대-최소 정규화를 진행합니다.</li>
+          </ul><br><br>
+        </div>
+
+        <div class="project-info">
+          <h4>2. Model</h4>
+          <p>
+            &#128161; <b>모델 학습</b>
+          </p>
+          <ul>
+            <li>Denoise AutoEncoder 모델에 학습데이터를 사용하여 학습을 진행하였습니다.</li>
+            <li>테스트 데이터를 AutoEncoder에 입력하여 decoder를 통해 나온 값으로 가려진 값(키워드, 노래)를 예측할 수 있습니다.</li>
+            <img src="../image/project0202.png" alt="model"><br>
+          </ul><br><br>
+          <p>
+            &#128161; <b>모델 학습 결과</b>
+          </p>
+          <ul>
+            <li>노이즈가 추가된 학습데이터를 X 데이터, 노이즈를 추가하기 전의 학습데이터를 y 데이터로 사용하여 모델을 학습한 결과입니다.</li>
+            <img src="../image/project0203.png" alt="model"><br>
+            <div style="padding-left: 20px;">
+              <p>
+                EPOCH 3 = 훈련데이터 RMSE : 0.0027 / 검증데이터 RMSE : 0.0035
+              </p>
+            </div>
+          </ul>
+          <br><br>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h3><span style="background-color: #FAFAB4;">&nbsp;&nbsp;결론&nbsp;&nbsp;</span></h3>
+        <div class="project-info">
+          <h4>1. 결론</h4>
+          <ul>
+            <li>태그에 사용된 단어 빈도를 통해 노래 추천을 받을 키워드 선정하였습니다.</li>
+            <img src="../image/project0204.png" style="max-height: 450px;" alt="표"><br>
+            <li>플레이리스트에 가장 많이 사용된 태그(기분전환)를 기준으로 5곡의 음악을 추천하면 다음과 같습니다.</li>
+            <div style="padding-left: 20px;">
+              <ol>
+                <li> Demi Lovato - Sorry Not Sorry</li>
+                <li> Ne-Yo - Another Love Song</li>
+                <li> Miranda Glory - Blue Eyes(feat. Matty Owens)</li>
+                <li> Dornik - God Knows</li>
+                <li> Quest - Walking On The Moon</li>
+              </ol>
+            </div>
+            <li>추천 시스템을 이용하면 사용자에 맞는 제품 및 서비스를 제공할 수 있기 때문에 사용자들이 제품 및 서비스를 찾기 위해 들이는 시간을 줄일 수 있습니다. 이를 통해 기업은 사용자에게 긍정적인 브랜드 경험을 전달할 수 있습니다.</li>
+          </ul>
+          <br><br>
+        </div>
+
+        <div class="project-info">
+          <h4>2. 프로젝트 회고</h4>
+          <p>
+            &#128161; <b>긍정적인 부분</b>
+          </p>
+          <ul>
+            <li>프로젝트를 통해 추천 시스템에 대해 공부하였고, AutoEncoder 모델을 사용하여 추천 시스템을 제작하였습니다.</li>
+            <li>프로젝트에서 만든 추천 시스템을 기반으로 다른 도메인의 제품 및 서비스에서 사용할 수 있는 추천 시스템을 제작할 수 있습니다. </li>
+          </ul><br><br>
+          <p>
+            &#128161; <b>한계점</b>
+          </p>
+          <ul>
+            <li>Denoise AutoEncoder 모델만 만들어서 성능의 확인이 어려웠습니다.</li>
+            <li>모델의 결과를 통해 만든 플레이리스트를 제작하지 않아 첫번째 가설(키워드와 음악 간의 상관관계가 높으면 사람들의 선호도가 높을 것이다)에 대한 검증을 하지 못했습니다.</li>
+          </ul><br><br>
+          <p>
+            &#128161; <b>개선 사항</b>
+          </p>
+          <ul>
+            <li>추천 시스템에 대한 다른 모델을 사용하여 모델 성능에 대한 검증 필요합니다.</li>
+          </ul>
+          <br><br>
+        </div>
+
+        <div class="project-info">
+          <h4>3. 참고자료</h4>
+          <ul>
+            <li>멜론에서 음악 추천을 어떻게 할까? - 카카오 아레나 3회 대회(출처 : 카카오 기술 블로그 / <a href="https://tech.kakao.com/2020/04/29/kakaoarena-3rd-part1/">링크</a> )</li>
+            <li>투빅스 추천시스템 세미나(출처 : 투빅스 블로그 / <a href="https://velog.io/@tobigs-recsys/DL-based-Recommender-Systems-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EA%B8%B0%EB%B0%98-%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C">링크</a> )</li>
+          </ul>
+          <br><br>
+        </div>
+      </section>
+
+  </main>
+  <footer>
+    <p>&copy; Jihyun. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
