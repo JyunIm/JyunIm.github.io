@@ -12,6 +12,7 @@ body {
 
 header {
   background-color: #1a1a1a;
+  position: fixed;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -32,12 +33,6 @@ header {
 nav ul {
   display: flex;
   list-style: none;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 nav li {
