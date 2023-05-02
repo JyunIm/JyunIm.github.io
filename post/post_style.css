@@ -12,6 +12,7 @@ body {
 
 header {
   background-color: #1a1a1a;
+  position: fixed;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -27,12 +28,6 @@ header {
 .logo-container img {
   height: 40px;
   margin-right: 10px;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 nav ul {
