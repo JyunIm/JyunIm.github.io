@@ -43,11 +43,11 @@
       <h3><span style="background-color: #FAFAB4;">&nbsp;&nbsp;INTRO&nbsp;&nbsp;</span></h3>
       <div class="project-info">
         <h4>1. 기획배경</h4>
-        <img src="../image/project0101.png" alt="국내 밀키트 시장전망">
+        <img src="../image/project0101.png" alt="국내 밀키트 시장전망"><br>
         <ul>
           <li>식품산업통계정보에 의하면 가구주의 연령이 낮아지고, 코로나19로 인해 외식이 줄어들면서 <mark><b>간편식 및 밀키트에 대한 수요와 시장규모가 증가</b></mark>하고 있습니다.</li>
         </ul><br>
-        <img src="../image/project0102.png" alt="간편식 구매경험">
+        <img src="../image/project0102.png" alt="간편식 구매경험"><br>
         <ul>
           <li>2,000명을 대상으로 한 온라인 조사결과, 80%이상의 소비자들이 간편식 또는 밀키트를 구매한 경험이 존재합니다. </li>
           <li>위의 두 그래프를 바탕으로 앞으로도 많은 소비자들이 밀키트를 찾을 것이라 예상하고 <mark><b>안정적인 매출을 창출할 수 있는 밀키트를 기획하고 판매 예측을 하는 프로젝트</b></mark>를 기획했습니다. </li>
@@ -62,11 +62,11 @@
         <ul>
           <li>소비자들에게 <mark><b>인기가 있을 것이라 예상되는 밀키트를 기획하고 판매를 예측</b></mark>합니다.</li>
           <div style="padding-left: 20px;">
-            <ol>
+            <ul>
               <li>시장조사를 통해 현재 소비자에게 인기있는 밀키트를 분석합니다.</li>
               <li>밀키트 기획을 위해 소비자들이 많이 찾을만한 밀키트를 기획합니다.</li>
               <li>시장조사 및 분석을 통해 기획한 밀키트가 얼마나 잘 팔릴 것인가 예측합니다.</li>
-            </ol>
+            </ul>
           </div>
         </ul><br><br>
         <p>
@@ -92,7 +92,7 @@
           <li>밀키트 기획을 위해 사람들에게 인기가 있는 맛집에 대한 정보를 맛집 추천 사이트인 망고플레이트를 통해 수집했습니다.</li>
           <li>시장조사를 위해 네이버 쇼핑에서 밀키트로 검색했을 때, 나오는 상품에 대한 정보를 수집했습니다.</li>
         </ul>
-      </div>
+      </div><br><br>
     </section>
     
     <section class="project-section">
@@ -102,7 +102,7 @@
           <p>
             &#128161; <b>데이터 파이프라인</b>
           </p>
-          <img src="../image/project0105.png" alt="data pipeline"><br>
+          <img src="../image/project0105.jpg" alt="data pipeline"><br>
           <ol>
             <li>네이버 쇼핑 및 망고플레이트에서 데이터를 스크레이핑합니다.</li>
             <div style="padding-left: 20px;">
@@ -141,16 +141,16 @@
           <p>
             &#128161; <b>시장조사</b>
           </p>
-          <img src="../image/project0106.png" alt="category and sales">
+          <img src="../image/project0106.png" alt="category and sales"><br>
           <ul>
             <li>출시된 밀키트의 카테고리별 상품 수와 판매량을 확인해보면 <b>‘간식/디저트’(평균 392건 판매)와 ‘구이’(평균 234건 판매)</b> 카테고리에서 평균보다 판매량이 많은 것을 확인할 수 있습니다(전체 평균 156건).</li>
           </ul><br>
-          <img src="../image/project0107.png" alt="products">
+          <img src="../image/project0107.png" alt="products"><br>
           <ul>
             <li>카테고리 ‘간식/디저트’의 경우, 약 84%의 상품이 떡볶이 밀키트를 판매하는 상품으로 시장에 신규 진출을 할 경우, 경쟁이 심할 것으로 예측됩니다.</li>
             <li>카테고리 ‘구이’의 경우, 스테이크 밀키트는 경쟁이 치열할 것으로 예측되지만, <b><mark>곱창과 순대 밀키트는 상대적으로 경쟁이 심하지 않을 것으로 예상</mark></b>됩니다.</li>
-          </ul>
-          <img src="../image/project0108.png" alt="shop">
+          </ul><br>
+          <img src="../image/project0108.png" alt="shop"><br>
           <br>
           <ul>
             <li>주요도시에 위치한 매장을 카테고리별로 나누어보면 카페가 가장 많은 수를 차지하고, 고기집(족발, 보쌈 포함), 해산물, 국밥, 한식 순으로 나열할 수 있습니다.</li>
@@ -167,9 +167,9 @@
             <li>결정트리 모델, 랜덤포레스트 모델, XGB 모델, LightGBM 모델 등을 통해 모델학습을 진행했습니다
             (평가지표 : MAE, MSE, RMSE, R2 점수 사용).</li>
             <li>평가지표의 결과가 가장 잘 나온 모델인 LightGBM 모델을 부호화(pickle)하였습니다.</li>
-          </ul>
+          </ul><br><br>
           <p>&#128161; <b>모델 평가</b></p>
-          <img src="../image/project0109.png" alt="model eval">
+          <img src="../image/project0109.png" alt="model eval"><br>
           <ul>
             <li>모델의 평가지표가 다른 모델에 비해 성과가 좋으며, 검증 데이터보다 테스트 데이터에서 성과가 개선되는 모습을 확인할 수 있었습니다.</li>
           </ul>
