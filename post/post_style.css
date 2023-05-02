@@ -11,8 +11,9 @@ body {
 }
 
 header {
-  background-color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.8);
   position: fixed;
+  top: 0;
   color: #fff;
   display: flex;
   justify-content: space-between;
