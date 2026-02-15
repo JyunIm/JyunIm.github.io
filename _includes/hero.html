@@ -1,20 +1,32 @@
-<!-- begin c-hero -->
+<!-- begin hero -->
 <div class="hero">
   <div class="container">
     <div class="row">
-      <div class="col col-6 col-t-12 last-item">
-        <div class="hero__content">
+      <div class="col col-12">
+        <div class="hero__content hero__content--full">
           <h1 class="hero__title">{{ site.data.settings.author.say-hello }}</h1>
           <p class="hero__subtitle">{{ site.data.settings.author.bio }}</p>
-          <div class="hero__social">
-            <span class="hero__social-title">Follow Me |</span>
-            {% include contact-link.html %}
+
+          {% if site.data.settings.author.skills %}
+          <div class="hero__skills">
+            {% for skill in site.data.settings.author.skills %}
+              <span class="hero__skill-tag">{{ skill }}</span>
+            {% endfor %}
           </div>
-        </div>
-      </div>
-      <div class="col col-6 col-t-12">
-        <div class="hero__image">
-          <img src="{{site.baseurl}}/images/{{ site.data.settings.author.image }}" alt="">
+          {% endif %}
+
+          <div class="hero__contact">
+            {% if site.data.settings.email %}
+              <a href="mailto:{{ site.data.settings.email }}" class="hero__contact-link">
+                <i class="ion ion-ios-mail"></i> {{ site.data.settings.email }}
+              </a>
+            {% endif %}
+            {% if site.data.settings.github %}
+              <a href="{{ site.data.settings.github }}" class="hero__contact-link" target="_blank">
+                <i class="ion ion-logo-github"></i> GitHub
+              </a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>

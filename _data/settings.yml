@@ -1,44 +1,48 @@
 #-------------------------------
 # General Site Settings
-title: Jihyun_portfolio
-logo: logo.svg # You can add own logo.
-description: Zolan is modern minimal theme for Jekyll
+title: 임지현 | Growth Marketer
+logo: # no logo
+description: 그로스 마케터 임지현의 포트폴리오
 
 
 #-------------------------------
 # Author Settings
 author:
-  name: Alex Rodriguez
-  image: 01.jpg
-  say-hello: Hello, I’m <strong>Alex Rodriguez</strong>
-  bio: Designs, talks, and writes about <strong>web</strong>, <strong>ethics</strong>, <strong>privacy</strong>, and dev. I share design tutorials, free resources and inspiration. Loves <a href="#">music</a> & riding his bicycle.
+  name: 임지현
+  image:
+  say-hello: 안녕하세요, <strong>그로스 마케터 임지현</strong>입니다.
+  bio: CRM 메시지 최적화 · A/B 테스트 설계·실행 · 퍼널 전환율 개선 · 리텐션 전략 수립에 강점을 가진 5년차 마케터입니다. Python과 SQL로 데이터를 직접 추출·분석하고, 실험 결과를 비용·손익으로 환산하여 비즈니스 의사결정에 기여합니다.
+  skills:
+    - SQL
+    - Python (pandas)
+    - Tableau
+    - A/B 테스트 설계·분석
+    - CRM 메시지 최적화
+    - 퍼널·코호트·리텐션 분석
+    - Hackle (A/B 테스트·피쳐플래그)
 
 
 #-------------------------------
 # Contact links
-twitter: https://twitter.com/ # Add your Twitter handle
-facebook: https://facebook.com/ # Add your Facebook handle
-dribbble: https://dribbble.com/ # Add your Dribbble handle
-instagram: https://instagram.com/ # Add your Instagram handle
-pinterest: https://pinterest.com/ # Add your Pinterest handle
+email: honao@naver.com
+github: https://github.com/JyunIm
 
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: # disabled
 
 
 #-------------------------------
 # Instagram Feed
-instafeed: # To enable the instafeed, use the value true. To turn off use the value false.
-instagram-profile: artemsheludko_ # Add instagram username
+instafeed: false
 
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics:
 
 
 #-------------------------------
 # Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+mailchimp:

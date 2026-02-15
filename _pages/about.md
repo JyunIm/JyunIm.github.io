@@ -2,25 +2,69 @@
 layout: page
 title: About
 permalink: /about/
-image: 01.jpg
 ---
 
-Hi, my name is Alex Rodriguez. I like being at the center of events, being free and enjoying every moment. Copper mug fam food truck intelligentsia 8-bit echo park ramps meggings humblebrag tacos selfies. Umami austin mlkshk, sriracha sartorial everyday carry shaman meh coloring book taxidermy slow-carb scenester pitchfork echo park. Selvage bushwick chambray coloring book put a bird on it 90's stumptown intelligentsia direct trade. Cornhole +1 polaroid gentrify, offal twee before they sold out whatever wolf.
+## 임지현 — 그로스 마케터 (Growth Marketer)
+
+5년차 마케터로, CRM 메시지 최적화 · A/B 테스트 설계·실행 · 퍼널 전환율 개선 · 리텐션 전략 수립에 강점을 가지고 있습니다. 프롭테크 서비스 '자리톡'에서 약 2년 8개월간 알림톡·푸시 등 CRM 채널의 실험을 직접 기획·실행하여 앱 설치율 99% 개선, 알림톡 클릭률 최대 80% 개선 등의 성과를 만들었습니다. Python과 SQL로 데이터를 직접 추출·분석하고, 실험 결과를 비용·손익으로 환산하여 비즈니스 의사결정에 기여합니다.
 
 ***
 
-#### Austin scenester...
-<small>2008 - 2018</small>
+## Skills
 
-Offal post-ironic before they sold out mixtape you probably haven't heard of them. Pinterest roof party umami everyday carry street art. Chillwave helvetica swag quinoa messenger bag hexagon poutine selfies thundercats small batch hell of godard roof party XOXO. Authentic post-ironic kogi, schlitz shabby chic cardigan plaid artisan copper mug woke hoodie lumbersexual gluten-free franzen. Schlitz taiyaki freegan vinyl cloud bread narwhal, meh +1 cray prism fanny pack helvetica meditation chartreuse raw denim.
+- **데이터 분석**: SQL, Python (pandas), Tableau
+- **마케팅 역량**: A/B 테스트 설계·분석, CRM 메시지 최적화, 고객 세그먼테이션, 퍼널 분석, 코호트·리텐션 분석, LTV 분석
+- **도구**: Hackle(핵클, A/B 테스트·피쳐플래그), Notion, Slack
 
-#### Vinyl hexagon before...
-<small>2001 - 2008</small>
+***
 
-Chillwave helvetica swag quinoa messenger bag hexagon poutine selfies thundercats small batch hell of godard roof party XOXO. Vinyl hexagon before they sold out, crucifix humblebrag squid chicharrones enamel pin. Iceland humblebrag farm-to-table, lyft pug tilde irony.
-Hot chicken shoreditch tousled listicle, actually meggings vape. Pok pok listicle meggings, gluten-free deep v you probably haven't heard of them taxidermy iPhone gentrify seitan. Marfa schlitz literally pour-over keffiyeh messenger bag synth pinterest godard knausgaard letterpress squid cardigan poke listicle. 
+## Experience
 
-#### La croix you probably...
-<small>1995 - 2000</small>
+### (주)자리컴퍼니 — 자리톡 · 그로스 마케터
+<small>2023.07 ~ 재직 중 (2년 8개월)</small>
 
-Shoreditch activated charcoal iceland hexagon. Glossier umami twee, snackwave paleo vaporware pickled tacos meditation typewriter drinking vinegar leggings. Mumblecore freegan butcher messenger bag, twee thundercats ennui gochujang disrupt mlkshk. Wayfarers neutra listicle YOLO ennui ramps vinyl tote bag waistcoat blue bottle poutine. Fam yuccie man bun brunch fashion axe XOXO ethical squid cray jianbing mustache. Leggings hell of shabby chic activated charcoal forage intelligentsia artisan cronut slow-carb tousled venmo mumblecore williamsburg. Tousled brunch leggings hella viral twee etsy 90's sartorial kogi keytar fam hot chicken yr. Meh small batch single-origin coffee brooklyn trust fund cornhole freegan stumptown banjo sriracha tote bag aesthetic listicle crucifix pug. Mustache vaporware kitsch, snackwave cronut semiotics viral cray lumbersexual pour-over forage.
+임차인·임대인 양면 플랫폼 '자리톡'(MAU 100만+)에서 CRM 채널 전반의 실험 기획·실행·분석을 담당하며, AARRR 전 퍼널에 걸쳐 성장을 이끌었습니다.
+
+**주요 성과:**
+- 임차인 앱 설치 유도 알림톡 클릭률 74% 개선, 설치율 99% 개선
+- 임대인 앱 설치 채널 구축으로 월 6,000~7,000명 추가 확보 (설치당 93원)
+- 신규 임대인 앱 삭제율 58% 감소 (11.67% → 4.84%)
+- 월세지원금 알림톡 최적화로 쿠팡 일 주문 수 84% 증가
+- Python 기반 이상치 탐지 시스템 구축, 300+ CRM 채널 자동 모니터링
+
+### 바이브라이프 · 마케터
+<small>2020.05 ~ 2022.09 (2년 5개월)</small>
+
+신제품 크라우드 펀딩 기획 및 마케팅 채널 운영을 담당했습니다.
+
+**주요 성과:**
+- 펀딩 2회 진행, 각각 목표 금액 3,800%, 3,200% 초과 달성
+- 인플루언서 협찬 커뮤니케이션, 펀딩 이벤트 기획·운영
+
+***
+
+## Education
+
+### 가톨릭대학교
+<small>2013.03 ~ 2019.02</small>
+
+- 생명과학과 학사
+- 심리학과 학사 (복수전공)
+
+***
+
+## Certification & Training
+
+### 코드스테이츠 AI 부트캠프
+<small>2023.04</small>
+
+- Python, pandas를 활용한 데이터 분석·전처리·기초 통계 학습
+- SQL을 통한 데이터 추출·수집·적재 역량 개발
+- 데이터 분석 기반 인사이트 도출 프로젝트 수행
+
+***
+
+## Contact
+
+- **Email**: honao@naver.com
+- **GitHub**: [github.com/JyunIm](https://github.com/JyunIm)
