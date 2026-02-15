@@ -2,7 +2,7 @@
 layout: post
 title: "Retention — 코호트 분석과 이탈 원인 규명으로 리텐션 전략 수립"
 description: "코호트 MAU 구조 분석으로 재방문 핵심 채널을 도출하고, 앱 삭제자 설문으로 이탈 원인을 정량화하여 리텐션 전략을 수립한 사례입니다."
-date: 2026-02-13 10:00:00
+date: 2026-02-12 10:00:00
 image: # no image
 tags: [Retention, 코호트분석, 이탈분석, CRM]
 ---

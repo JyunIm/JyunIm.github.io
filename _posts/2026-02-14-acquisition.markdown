@@ -2,7 +2,7 @@
 layout: post
 title: "Acquisition — 앱 설치율 99% 개선, 알림톡 최적화로 사용자 획득 극대화"
 description: "알림톡 템플릿 변경과 A/B 테스트를 통해 임차인 앱 설치율 99%, 클릭률 74%를 개선하고, 임대인 채널을 신규 구축하여 월 6,000~7,000명의 추가 설치자를 확보한 사례입니다."
-date: 2026-02-15 10:00:00
+date: 2026-02-14 10:00:00
 image: # no image
 tags: [Acquisition, A/B테스트, 알림톡, CRM]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Activation — 가입 후 전환율 개선과 앱 삭제율 58% 감소"
 description: "가입 시점별 CRM 알림톡 A/B 테스트와 온보딩 팝업 실험을 통해 정보등록 전환율을 개선하고, 신규 임대인 앱 삭제율을 58% 감소시킨 사례입니다."
-date: 2026-02-14 10:00:00
+date: 2026-02-13 10:00:00
 image: # no image
 tags: [Activation, 온보딩, A/B테스트, CRM]
 ---
