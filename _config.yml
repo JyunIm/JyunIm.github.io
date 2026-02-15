@@ -3,6 +3,7 @@ url: "https://jyunim.github.io"
 
 
 # Build settings
+future: true
 markdown: kramdown
 permalink: pretty
 plugins:
