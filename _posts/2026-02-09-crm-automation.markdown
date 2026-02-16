@@ -2,8 +2,6 @@
 layout: post
 title: "CRM 자동화 시스템 구축 — 이상치 탐지·메시지 피로도 관리·300+ 채널 효율화"
 description: "Python 기반 이상치 탐지 알고리즘을 설계·구축하고, PO와 협업하여 저성과 채널을 정리·개선하며 300+ 채널의 운영 효율을 체계화한 사례입니다."
-date: 2026-02-09 10:00:00
-image: # no image
 tags: [CRM, 자동화, Python, 운영효율화]
 ---
 
