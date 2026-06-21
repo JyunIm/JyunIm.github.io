@@ -1,0 +1,87 @@
+---
+layout: home
+permalink: /moyo/
+title: Moyo Portfolio
+---
+<style>
+  .portfolio-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  .portfolio-page__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+  }
+  .portfolio-page__head h2 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .portfolio-page__download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background: #111;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+  .portfolio-page__download:hover {
+    background: #333;
+  }
+  .portfolio-page__download svg {
+    width: 16px;
+    height: 16px;
+  }
+  .portfolio-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .portfolio-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+  }
+  @media (max-width: 600px) {
+    .portfolio-page { padding: 24px 16px 48px; }
+    .portfolio-page__head h2 { font-size: 24px; }
+    .portfolio-page__head { margin-bottom: 28px; }
+    .portfolio-gallery { gap: 16px; }
+  }
+</style>
+
+<section class="portfolio-page" id="moyo-portfolio">
+  <div class="portfolio-page__head">
+    <h2>Moyo Portfolio</h2>
+    <a class="portfolio-page__download" href="{{ site.baseurl }}/assets/moyo-portfolio.pdf" download="임지현_모요_포트폴리오.pdf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      PDF 다운로드
+    </a>
+  </div>
+
+  <div class="portfolio-gallery">
+    {% for i in (1..27) %}
+      {% if i < 10 %}{% assign n = i | prepend: '0' %}{% else %}{% assign n = i %}{% endif %}
+      <img src="{{ site.baseurl }}/images/moyo/page-{{ n }}.png" alt="임지현 모요 포트폴리오 - {{ i }} 페이지" loading="lazy">
+    {% endfor %}
+  </div>
+</section>
